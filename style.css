@@ -1,0 +1,61 @@
+body {
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  line-height: 1.5;
+  font-family: sans-serif;
+  width: 1300px;
+  margin: 50px auto;
+}
+
+.banner {
+  background-image: url(image/Piskovky.uvodni.banner.jpg);
+  width: 30%;
+  border-radius: 5px 5px 0 0;
+  float: left;
+}
+
+.pozadi {
+  background-color: #283e50;
+  width: 30%;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+p {
+  color: #ffffff;
+  text-align: center;
+  padding: 25px;
+}
+
+.tlacitka a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  margin: 1px 0;
+}
+
+.tlacitkoPravidla {
+  background-color: #1fcca4;
+}
+
+.tlacitkoZacit {
+  background-color: #0197f6;
+}
+
+.tlacitkoPravidla:hover {
+  background-color: #1cbb96;
+}
+
+.tlacitkoZacit:hover {
+  background-color: #0090e9;
+}
+
+//* font-family: 'Lobster', cursive;
