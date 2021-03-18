@@ -5,6 +5,8 @@ body {
   font-family: sans-serif;
   width: 1300px;
   margin: 50px auto;
+   display: flex;
+  justify-content: center;
 }
 
 .banner {
