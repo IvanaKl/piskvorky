@@ -1,17 +1,23 @@
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   line-height: 1.5;
   font-family: sans-serif;
-  width: 1300px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   margin: 50px auto;
 }
 
 .banner {
-  background-image: url(image/Piskovky.uvodni.banner.jpg);
   width: 30%;
   border-radius: 5px 5px 0 0;
-  float: left;
 }
 
 .pozadi {
@@ -58,4 +64,10 @@ p {
   background-color: #0090e9;
 }
 
-//* font-family: 'Lobster', cursive;
+/* font-family: 'Lobster', cursive;
+
+/* úkol 2 */
+
+.kolecko-krizek {
+  filter: invert(100%);
+}
