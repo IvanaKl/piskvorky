@@ -39,7 +39,8 @@ p {
   padding: 25px;
 }
 
-.tlacitka a {
+.tlacitka a,
+.tlacitka-pravidla a {
   text-decoration: none;
   color: #ffffff;
   display: block;
@@ -48,19 +49,27 @@ p {
   margin: 1px 0;
 }
 
-.tlacitkoPravidla {
+.tlacitkoPravidla,
+.tlacitko-pravidla-uvodniStranka {
   background-color: #1fcca4;
 }
 
-.tlacitkoZacit {
+.tlacitkoZacit,
+.tlacitko-pravidla-zacitHrat {
   background-color: #0197f6;
 }
 
-.tlacitkoPravidla:hover {
+.tlacitkoPravidla:hover,
+.tlacitkoPravidla:active,
+.tlacitko-pravidla-uvodniStranka:hover,
+.tlacitko-pravidla-uvodniStranka:active {
   background-color: #1cbb96;
 }
 
-.tlacitkoZacit:hover {
+.tlacitkoZacit:hover,
+.tlacitkoZacit:active,
+.tlacitko-pravidla-zacitHrat:hover,
+.tlacitko-pravidla-zacitHrat:active {
   background-color: #0090e9;
 }
 
@@ -68,6 +77,50 @@ p {
 
 /* úkol 2 */
 
-.kolecko-krizek {
+.nadpis-pravidla {
+  font-family: 'Lobster', cursive;
+  margin-bottom: 60px;
+}
+
+.seznam-pravdila {
+  margin: 0 30px;
+}
+.seznam-pravdila li {
+  list-style-type: decimal;
+  margin-bottom: 10px;
+  padding: 0 15px;
+}
+
+li img {
   filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+
+.pozadi-pravidla {
+  color: white;
+}
+
+figure {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.pozadi-pravidla {
+  background-color: #283e50;
+  width: 30%;
+  border-radius: 5px 5px 0 0;
+}
+
+figure img {
+  width: 100%;
 }
