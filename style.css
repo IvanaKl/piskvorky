@@ -128,9 +128,14 @@ figure img {
 @media (min-width: 540px) {
   .ukazkaHry {
     background-color: #283e50;
-    width: 50%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
+  figure {
+    width: 35%;
+  }
   .pozadi-pravidla {
     width: 60%;
   }
