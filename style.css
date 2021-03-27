@@ -117,10 +117,21 @@ figcaption {
 
 .pozadi-pravidla {
   background-color: #283e50;
-  width: 30%;
+  width: 360px;
   border-radius: 5px 5px 0 0;
 }
 
 figure img {
   width: 100%;
+}
+
+@media (min-width: 540px) {
+  .ukazkaHry {
+    background-color: #283e50;
+    width: 50%;
+  }
+
+  .pozadi-pravidla {
+    width: 60%;
+  }
 }
