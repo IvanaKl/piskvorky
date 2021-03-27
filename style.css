@@ -131,10 +131,11 @@ figure img {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   figure {
-    width: 35%;
+    width: 40%;
   }
   .pozadi-pravidla {
     width: 60%;
