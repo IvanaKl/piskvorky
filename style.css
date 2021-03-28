@@ -16,13 +16,13 @@ body {
 }
 
 .banner {
-  width: 30%;
+  width: 360px;
   border-radius: 5px 5px 0 0;
 }
 
 .pozadi {
   background-color: #283e50;
-  width: 30%;
+  width: 360px;
 }
 
 h1 {
