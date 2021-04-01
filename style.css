@@ -10,7 +10,7 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column;
   align-items: center;
   margin: 50px auto;
 }
@@ -140,4 +140,68 @@ figure img {
   .pozadi-pravidla {
     width: 60%;
   }
+}
+
+.hra {
+  max-width: 80vmin;
+}
+
+.hra-kroužek {
+  filter: invert(100%);
+  width: 1em;
+  height: 1em;
+}
+/*----hra-----*/
+
+.hraci-pole1 .policko {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+  background: none;
+}
+.hraci-pole1 .policko:hover {
+  background: linear-gradient(#615dad, #ffc8da);
+  opacity: 50%;
+}
+
+.domecek {
+  background-color: #1fcca4;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.domecek:hover {
+  background-color: #1cbb96;
+}
+
+.zpet {
+  background-color: #0197f6;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.zpet:hover {
+  background-color: #0090e9;
+}
+.domecekAzpet {
+  display: flex;
+  margin: 10px;
+}
+
+.hra-uvodni-panel {
+  display: flex;
 }
