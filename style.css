@@ -156,10 +156,12 @@ figure img {
 .telo-hra {
   max-width: 80vmin;
   background-attachment: fixed;
+  width: 360px;
 }
 
 .hraci-pole1 .policko {
   border: 1px solid black;
+
   padding: 12px;
   text-align: center;
   display: inline-block;
@@ -217,8 +219,6 @@ figure img {
 }
 
 .hraje {
-  position: relative;
   margin-left: -45px;
   font-size: large;
-  margin-bottom: 15px;
 }
