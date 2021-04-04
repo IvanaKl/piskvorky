@@ -62,16 +62,16 @@ p {
 }
 
 .tlacitkoPravidla:hover,
-.tlacitkoPravidla:focus,
+.tlacitkoPravidla:active,
 .tlacitko-pravidla-uvodniStranka:hover,
-.tlacitko-pravidla-uvodniStranka:focus {
+.tlacitko-pravidla-uvodniStranka:active {
   background-color: #1cbb96;
 }
 
 .tlacitkoZacit:hover,
-.tlacitkoZacit:focus,
+.tlacitkoZacit:active,
 .tlacitko-pravidla-zacitHrat:hover,
-.tlacitko-pravidla-zacitHrat:focus {
+.tlacitko-pravidla-zacitHrat:active {
   background-color: #0090e9;
 }
 
@@ -161,7 +161,6 @@ figure img {
 
 .hraci-pole1 .policko {
   border: 1px solid black;
-
   padding: 12px;
   text-align: center;
   display: inline-block;
