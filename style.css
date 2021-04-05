@@ -154,18 +154,21 @@ figure img {
 }
 /*----hra-----*/
 .telo-hra {
-  max-width: 100vmin;
+  max-width: 80vmin;
   background-attachment: fixed;
 }
 
-button {
-  max-width: 10vmin;
+.celaHraciPlocha {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
+
 .hraci-pole1 .policko {
   border: 1px solid black;
   padding: 0;
-  width: 8vmin;
-  height: 8vmin;
+  width: 7vmin;
+  height: 7vmin;
   text-align: center;
   display: inline-block;
   cursor: pointer;
@@ -199,23 +202,28 @@ button {
   padding: 10px;
   display: flex;
   border-radius: 5px;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .zpet:hover {
   background-color: #0090e9;
 }
 .domecekAzpet {
-  margin: 10px;
   display: flex;
+  margin: 0;
 }
 
 .hra-uvodni-panel {
   display: flex;
   justify-content: space-between;
+  margin: 0 20px 0 5px;
 }
 
 .hraje {
   font-size: large;
   margin: 0;
+}
+
+.telo-hra {
+  align-items: stretch;
 }
