@@ -228,3 +228,7 @@ figure img {
 .telo-hra {
   align-items: stretch;
 }
+
+.hra-krizek {
+  display: none;
+}
