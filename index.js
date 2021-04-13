@@ -22,10 +22,12 @@ for (let i = 0; i < buttons.length; i += 1) {
       document.querySelector('.hra-krizek').style.display = 'inline-block';
       button.innerHTML = `<img  src="image2/cross-křízek.svg"/>`;
       document.querySelector('.hra-krizek').style.display = 'none';
+      button.disabled = 'true';
     } else {
       document.querySelector('.hra-krizek').style.display = 'inline-block';
       button.innerHTML = `<img  src="image2/circle-kruh.svg" />`;
       document.querySelector('.hra-kroužek').style.display = 'none';
+      button.disabled = 'true';
     }
   });
 }
