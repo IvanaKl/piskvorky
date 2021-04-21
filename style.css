@@ -76,7 +76,6 @@ p {
 }
 
 /* font-family: 'Lobster', cursive;
-
 /* úkol 2 */
 
 .nadpis-pravidla {
@@ -231,4 +230,18 @@ figure img {
 
 .hra-krizek {
   display: none;
+}
+
+.tlacitko--kolecko {
+  background-image: url('image2/circle-kruh.svg');
+  background-size: calc(80vmin / 10) - 1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tlacitko--krizek {
+  background-image: url('image2/cross-křízek.svg');
+  background-size: calc(80vmin / 10) - 1;
+  background-repeat: no-repeat;
+  background-position: center;
 }
