@@ -1,5 +1,5 @@
 'use strict';
-
+/*úkol 4*/
 const tlacitka = document.querySelectorAll('button');
 tlacitka.forEach((tlacitko) => {
   tlacitko.addEventListener('click', (e) => {
@@ -15,7 +15,7 @@ for (let i = 0; i < buttons.length; i += 1) {
   const button = buttons[i];
 
   button.addEventListener('click', () => {
-    koleckoHraje.classList.toggle('board__field--cross');
+    koleckoHraje.classList.toggle('.hra-kroužek');
     document.querySelector('.hra-kroužek').style.display = 'inline-block';
 
     if (koleckoHraje.className === 'hra-krizek') {
@@ -32,10 +32,36 @@ for (let i = 0; i < buttons.length; i += 1) {
   });
 }
 
-/* ukol 5*/
+/*úkol 5*/
+let playing = 'circle';
+let click = 0;
+const playingCross = document.querySelector('.hra-kroužek');
+
+const playingFunction = (event) => {
+  if (event.target.disabled) {
+    return;
+  }
+  click++;
+  if (click % 2 != 0) {
+    event.target.classList.add('tlacitko--kolecko');
+    playingCross.src = 'image2/cross-křízek.svg';
+  } else {
+    event.target.classList.add('tlacitko--krizek');
+    playingCross.src = 'image2/circle-kruh.svg';
+  }
+  event.target.disabled = true;
+
+  if (isWinningMove(event.target)) {
+    alert(`Vyhrál: ${getSymbol(event.target)}`);
+  }
+};
+
+document.querySelectorAll('.policko').forEach((element) => {
+  element.addEventListener('click', playingFunction);
+});
 
 const boardSize = 10; // 10x10
-const fields = document.querySelectorAll('.policko'); // Selektor pozměň tak, aby odpovídal tvému kódu.
+const fields = document.querySelectorAll('.policko');
 
 const getPosition = (field) => {
   let fieldIndex = 0;
@@ -52,14 +78,17 @@ const getPosition = (field) => {
   };
 };
 
-const getField = (row, column) => fields[row * boardSize + column];
+const getField = (row, column) => {
+  return document.querySelectorAll('.policko')[row * 10 + column];
+};
 
 const getSymbol = (field) => {
-  // Název třídy přizpůsob tvému kódu.
-  if (field.classList.contains('.tlacitko--kolecko')) {
-    return 'kolečko';
-  } else if (field.classList.contains('.tlacitko--krizek')) {
-    return 'křížek';
+  if (field.classList.contains('tlacitko--krizek')) {
+    return 'křižek.';
+  } else if (field.classList.contains('tlacitko--kolecko')) {
+    return 'kolečko.';
+  } else {
+    return undefined;
   }
 };
 
@@ -116,13 +145,3 @@ const isWinningMove = (field) => {
 
   return false;
 };
-
-const zprava = () => {
-  if (true) {
-    alert('Vyhrál křížek.');
-  } else {
-    alert('Vyhrálo kolečko.');
-  }
-};
-
-zprava();
