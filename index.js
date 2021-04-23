@@ -23,12 +23,12 @@ for (let i = 0; i < buttons.length; i += 1) {
       document.querySelector('.hra-krizek').style.display = 'inline-block';
       button.innerHTML = `<img  src="image2/cross-křízek.svg"/>`;
       document.querySelector('.hra-krizek').style.display = 'none';
-      button.disabled = 'true';
+      /*button.disabled = 'true';*/
     } else {
       document.querySelector('.hra-krizek').style.display = 'inline-block';
       button.innerHTML = `<img  src="image2/circle-kruh.svg" />`;
       document.querySelector('.hra-kroužek').style.display = 'none';
-      button.disabled = 'true';
+      /* button.disabled = 'true';*/
     }
   });
 }
@@ -54,7 +54,10 @@ const playingFunction = (event) => {
   event.target.disabled = true;
 
   if (isWinningMove(event.target)) {
-    alert(` ${getSymbol(event.target)} vítězí!`);
+    alert(`${getSymbol(event.target)} vítězí!`);
+    {
+      location.reload();
+    }
   }
 };
 
@@ -86,7 +89,7 @@ const getField = (row, column) => {
 
 const getSymbol = (field) => {
   if (field.classList.contains('tlacitko--krizek')) {
-    return 'Křižek,';
+    return 'Křížek,';
   } else if (field.classList.contains('tlacitko--kolecko')) {
     return 'Kolečko,';
   } else {
@@ -101,7 +104,7 @@ const isWinningMove = (field) => {
 
   let i;
 
-  let inRow = 1; // Jednička pro právě vybrané políčko
+  let inRow = 1;
   // Koukni doleva
   i = origin.column;
   while (i > 0 && symbol === getSymbol(getField(origin.row, i - 1))) {
