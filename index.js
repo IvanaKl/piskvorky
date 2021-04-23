@@ -1,4 +1,5 @@
 'use strict';
+
 /*úkol 4*/
 const tlacitka = document.querySelectorAll('button');
 tlacitka.forEach((tlacitko) => {
@@ -33,6 +34,7 @@ for (let i = 0; i < buttons.length; i += 1) {
 }
 
 /*úkol 5*/
+
 let playing = 'circle';
 let click = 0;
 const playingCross = document.querySelector('.hra-kroužek');
@@ -52,7 +54,7 @@ const playingFunction = (event) => {
   event.target.disabled = true;
 
   if (isWinningMove(event.target)) {
-    alert(`Vyhrál: ${getSymbol(event.target)}`);
+    alert(` ${getSymbol(event.target)} vítězí!`);
   }
 };
 
@@ -84,9 +86,9 @@ const getField = (row, column) => {
 
 const getSymbol = (field) => {
   if (field.classList.contains('tlacitko--krizek')) {
-    return 'křižek.';
+    return 'Křižek,';
   } else if (field.classList.contains('tlacitko--kolecko')) {
-    return 'kolečko.';
+    return 'Kolečko,';
   } else {
     return undefined;
   }
